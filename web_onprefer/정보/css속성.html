@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Untitled Document</title>
+<style>
+*{margin:0;padding:0}
+body{width:800px;margin:50px auto;font-family:dotum;font-size:14px}
+p{text-align:center;font-size:1.2em;line-height:2em}
+table{border-collapse:collapse;width:100%;margin-bottom:50px;}
+th,td{border: 1px solid #919191;padding:5px 10px;}
+tr td:first-child{background-color:#92e2e2;font-weight:bold;width:150px;}
+tr td:last-child{width:250px;}
+</style>
+</head>
+
+<body>
+<p><strong>폰트 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>font-family</td>
+        <td> </td>
+        <td>글꼴</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td>normal/italic/oblique</td>
+        <td>기울임</td>
+      </tr>
+      <tr>
+        <td>font-variant</td>
+        <td>normal/small-caps</td>
+        <td>small-caps 크기가 작은 대문자</td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>normal | bold | bolder | lighter <br />
+          | 100 | 200 | 300 | 400 | 500 | 600 |   700 | 800 | 900 | inherit ] </td>
+        <td>숫자는 글자 굵기</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>절대적 단위 : cm, mm, in, pt, pc, px/상대적 단위 : em, ex/퍼센트(%)</td>
+        <td>폰트사이즈</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>텍스트 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>line-height</td>
+        <td>normal, cm, mm, in, pt, pc, px, %</td>
+        <td>줄간격</td>
+      </tr>
+      <tr>
+        <td>text-indent</td>
+        <td>normal, cm, mm, in, pt, pc, px, em, ex, %</td>
+        <td>문단 첫줄 들여쓱기,음수사용시 <br />
+          내여쓰기</td>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td>left, right, center, justify</td>
+        <td>텍스트,이미지 수평정렬</td>
+      </tr>
+      <tr>
+        <td>text-decoration</td>
+        <td>none, underline, overline, line-through,blink</td>
+        <td>줄긋기</td>
+      </tr>
+      <tr>
+        <td>vertical-align</td>
+        <td>baseline, sup, sub, middle, text-top, top, text-bottom, bottom</td>
+        <td>텍스트나 이미지 수직정렬</td>
+      </tr>
+      <tr>
+        <td>text-transform</td>
+        <td>capitalize, uppercase, lowercase, none</td>
+        <td>영문자변환</td>
+      </tr>
+      <tr>
+        <td>letter-spacing</td>
+        <td>normal, cm, mm, in, pt, pc, px, %</td>
+        <td>자간 간격</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>색상/배경 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>color</td>
+        <td>#영문자, RGB</td>
+        <td>글자,밑줄색</td>
+      </tr>
+      <tr>
+        <td>background-color</td>
+        <td>영문자, RGB, transparent</td>
+        <td>배경색</td>
+      </tr>
+      <tr>
+        <td>background-image</td>
+        <td>none, url(파일위치)</td>
+        <td>배경이미지</td>
+      </tr>
+      <tr>
+        <td>background-repeat</td>
+        <td>repeat, repeat-x, repeat-y, no-repeat</td>
+        <td>배경반복</td>
+      </tr>
+      <tr>
+        <td>background-position</td>
+        <td>top, bottom, left, center, right, 가로% 세로%&quot;</td>
+        <td>이미지 반복여부 </td>
+      </tr>
+      <tr>
+        <td>background-attachment</td>
+        <td>scroll, fixed</td>
+        <td>화면스크롤시 이동여부</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>박스/테두리 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>margin</td>
+        <td>margin-top, margin-right, margin-bottom, margin-left</td>
+        <td>시계방향 여백지정</td>
+      </tr>
+      <tr>
+        <td>border</td>
+        <td>border-top, border-right, border-bottom, border-left</td>
+        <td>시계방향 테두리선</td>
+      </tr>
+      <tr>
+        <td>border-style</td>
+        <td>dotted, dashed, groove, ridge, inset, outset</td>
+        <td>시계방향 테두리선 모양</td>
+      </tr>
+      <tr>
+        <td>border-width</td>
+        <td>border-top-width, border-right-width, border-bottom-width,   border-left-width</td>
+        <td>시계방향 테두리 두께</td>
+      </tr>
+      <tr>
+        <td>border-color</td>
+        <td>border-top-color, border-right-color,   border-bottom-color, border-left-color</td>
+        <td>각각 테두리 색상 지정</td>
+      </tr>
+      <tr>
+        <td>padding</td>
+        <td>padding-top, padding-right, padding-bottom, padding-left</td>
+        <td>시계방향 테두리 안쪽여백</td>
+      </tr>
+      <tr>
+        <td>float</td>
+        <td>left, right, none</td>
+        <td>이미지,텍스트 다른 내용과의 배치</td>
+      </tr>
+      <tr>
+        <td>position</td>
+        <td>absolute, relative, static</td>
+        <td>브라우저에서의 위치표시</td>
+      </tr>
+      <tr>
+        <td>overflow</td>
+        <td>scroll<br />
+          hidden(할당된 공간에 들어가는 내용만 보여주고, 나머지는 자른다.), <br />
+          visible(크기에 관계없이 내용을   모두 보여준다.),<br />
+          auto(할당된 공간의 크기 이상이 되면 스크롤바를 나타낸다.)</td>
+        <td>상자안의 내용이 상자를 넘어 <br />
+          갈 때의 처리 여부</td>
+      </tr>
+      <tr>
+        <td>overflow</td>
+        <td>overflow-x, overflow-y</td>
+        <td>스크롤 바를 따로 지정</td>
+      </tr>
+      <tr>
+        <td>visibility</td>
+        <td>inherit, visible, hidden</td>
+        <td>element의 화면 표시 여부</td>
+      </tr>
+      <tr>
+        <td>z-index</td>
+        <td>auto, 숫자</td>
+        <td>엘리먼트가 위로 겹치는 속성.<br />
+          상대,절대값일때 사용가능<br />
+          숫자가 높을수록 젤 상위</td>
+      </tr>
+      <tr>
+        <td>top, left</td>
+        <td>숫자, %, auto</td>
+        <td>위, 왼쪽위치, <br />
+          위치가 상대․절대일때만 사용</td>
+      </tr>
+      <tr>
+        <td>width, height</td>
+        <td>숫자, %, auto</td>
+        <td>내용의 너비와 높이를 지정, <br />
+          위치가 상대․절 대일때만 사용</td>
+      </tr>
+      <tr>
+        <td>clear</td>
+        <td>none, left, right, both</td>
+        <td>지정한 방향에는 다른 내용이<br />
+          올 수 없음을   나타낸다</td>
+      </tr>
+	  <tr>
+        <td>display:flex</td>
+        <td>flex, inline-flex</td>
+        <td>플렉스를 블록 수준이나 인라인 수준으로 작동함</td>
+      </tr>
+	  <tr>
+        <td>flex-direction</td>
+        <td>row,row-reverse,column, column-reverse</td>
+        <td>배치할 때 기본축을 가로(row), 세로(column)로 지정</td>
+      </tr>
+	  <tr>
+        <td>flex-wrap</td>
+        <td>nowrap,wrap</td>
+        <td>자식요소의 줄바꿈여부</td>
+      </tr>
+  	  <tr>
+        <td>flex-flow</td>
+        <td>row wrap</td>
+        <td>flex-direction과 flex-wrap속성의 축약</td>
+      </tr>
+  	  <tr>
+        <td>justify-content</td>
+        <td>flex-start,flex-end,center,space-between</td>
+        <td>박스의 기본축(flex-direction값)의 시작점, 끝점, 중앙, 좌우 사이여백균등 배분으로 정렬함 </td>
+      </tr>
+  	  <tr>
+        <td>align-items(단수)<br>or<br>align-content(복수)</td>
+        <td>flex-start,flex-end,center,space-between,space-around,space-evenly</td>
+        <td>박스의 기본축(flex-direction값)의 시작점, 끝점, 중앙, 좌우 사이여백균등, 여백균등, 여백을 양끝까지 배분</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>목록 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>list-style-type</td>
+        <td>disc, circle, square, decimal, lower-roman, none,<br />
+          upper-roman,   lower-alpha, upper-alpha</td>
+        <td>리스트 스타일 타입</td>
+      </tr>
+      <tr>
+        <td>list-style-image</td>
+        <td>url, none</td>
+        <td>리스트의 블릿 기호 이미지로 지정</td>
+      </tr>
+      <tr>
+        <td>list-style-position</td>
+        <td>inside, outside</td>
+        <td>리스트의 문장이 출력될 지점</td>
+      </tr>
+      <tr>
+        <td>list-style</td>
+        <td>list-style-type, position, image</td>
+        <td>3가지 속성을 한꺼번에 지정</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>커서 css 속성</strong></p>
+<div>
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="2">cursor</td>
+        <td>crosshair, help, move, pointer, text, wait</td>
+        <td>커서 모양</td>
+      </tr>
+      <tr>
+        <td style="background-color:#fff;font-weight:normal">e-resize, w-reseze, s-resize, n-resize, ne-resize,   nw-resize,<br />
+          sw-resize, se-resize</td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>글자/그림 효과 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>filter</td>
+        <td>alpha,blur,chroma,dropshadow,shadow,filph,filpv,glow,gray,invert,<br />
+          light,xray,wave</td>
+        <td>필터</td>
+      </tr>
+      <tr>
+        <td>alpha</td>
+        <td>alpha(opacity=&quot;값&quot;, style=&quot;값&quot;, finishopacity=&quot;값&quot;, startx=&quot;값&quot;,<br />
+          starty=&quot;값&quot;,   finishx=&quot;값&quot;, finishy=&quot;값&quot;)</td>
+        <td>그림,글자에 투명도</td>
+      </tr>
+      <tr>
+        <td>blur</td>
+        <td>blur(add=&quot;값&quot;, direction=&quot;값&quot;, strength=&quot;값&quot;)<br />
+          ․ chroma</td>
+        <td>그림,글자에 블러효과</td>
+      </tr>
+      <tr>
+        <td>chroma</td>
+        <td>chroma(color=&quot;색상값&quot;)</td>
+        <td>그림,글자에특정색을 투명하게 </td>
+      </tr>
+      <tr>
+        <td>shadow</td>
+        <td>shadow(color=&quot;색상값&quot;, direction=&quot;그림자 방향 도&quot;)<br />
+          ․ dropshadow</td>
+        <td>지정된 색상의 그림자 효과를 <br />
+          지정하는 속성</td>
+      </tr>
+      <tr>
+        <td>dropshadow</td>
+        <td>dropshadow(color=&quot;색상값&quot;, offx=&quot;값&quot;, offy=&quot;값&quot;,positive=&quot;0,1&quot;)<br />
+          ․ filph</td>
+        <td>그림자의 위치를 지정해서 <br />
+          그림자 효과를 지정</td>
+      </tr>
+      <tr>
+        <td>filph</td>
+        <td> </td>
+        <td>그림이나 글자를 수평 반전</td>
+      </tr>
+      <tr>
+        <td>filpv</td>
+        <td> </td>
+        <td>그림이나 글자를 수직 반전</td>
+      </tr>
+      <tr>
+        <td>glow</td>
+        <td>glow(color=&quot;색상값&quot;, strength=&quot;값&quot;)</td>
+        <td>경계선 바깥쪽을 발광하게하는 효과</td>
+      </tr>
+      <tr>
+        <td>gray()</td>
+        <td> </td>
+        <td>그림이나 글자를 흑백</td>
+      </tr>
+      <tr>
+        <td>invert()</td>
+        <td> </td>
+        <td>그림이나 글자의 채도 및 색조를 반전</td>
+      </tr>
+      <tr>
+        <td>light()</td>
+        <td> </td>
+        <td>빛이 투과된 효과를 지정</td>
+      </tr>
+      <tr>
+        <td>xray()</td>
+        <td> </td>
+        <td>빛이 투과된 효과를 지정</td>
+      </tr>
+      <tr>
+        <td>wave</td>
+        <td>wave(add=&quot;값&quot;, freq=&quot;값&quot;, lightstrength=&quot;값&quot;, phase=&quot;값&quot;,<br />
+          strength=&quot;값&quot;)</td>
+        <td>파도 효과를 지정하는 속성</td>
+      </tr>
+      <tr>
+        <td>mask</td>
+        <td>mask(color=&quot;색상값&quot;)</td>
+        <td>투명한 채색 효과를 지정</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p><strong>페이지 나누는 css 속성</strong></p>
+<div>
+  <table >
+    <tbody>
+      <tr>
+        <td>page-break-after</td>
+        <td> </td>
+        <td>지정후 페이지를 나눈다.</td>
+      </tr>
+      <tr>
+        <td>page-break-before</td>
+        <td> </td>
+        <td>지정전 페이지를 나눈다.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/* --------------main------------- */
+
+#main .slick-arrow{
+    position:absolute;
+    bottom:15%;
+    z-index:9999;
+    width:100px;
+    height:100px;
+    font-size:0;
+    border:none;
+    
+}
+#main .slick-prev{
+    position:absolute;
+    right:22%;
+    background:url(../img/arrow1.png) no-repeat center;
+}
+#main .slick-next{
+    position:absolute;
+    right:15%;
+    background:url(../img/arrow2.png) no-repeat center;
+}
+
+#main .slick-dots{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translate(-50%,0);
+}
+#main .slick-dots li{
+    margin:0 20px;
+}
+#main .slick-dots li button{
+    border:1px solid #fff;
+    width:30px;
+    height:30px;
+    font-size:0;
+    border-radius:50%;
+    background-color: rgba(0,0,0,0.5);
+}
+#main .slick-dots .slick-active button{
+    background-color:rgba(253,208,7,0.5);
+}
+/* --------------company------------- */
+#company .slick-dots{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    position:absolute;
+    bottom:-20%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+#company .slick-dots li{
+    margin:0 20px;
+}
+#company .slick-dots li button{
+    border:1px solid #fff;
+    width:15px;
+    height:15px;
+    font-size:0;
+    border-radius:50%;
+    background-color: rgba(0,0,0,0.5);
+}
+#company .slick-dots .slick-active button{
+    background-color:rgba(253,208,7,0.5);
+}
+
+/* --------------custom------------- */
+#custom .slick-arrow{
+    position:absolute;
+    bottom:0%;
+    z-index:9999;
+    width:100px;
+    height:100px;
+    font-size:0;
+    border:none;
+    
+}
+#custom .slick-prev{
+    position:absolute;
+    left:-49%;
+    background:url(../img/arrow1.png) no-repeat center;
+}
+#custom .slick-next{
+    position:absolute;
+    left:-37%;
+    background:url(../img/arrow2.png) no-repeat center;
+}
+/* --------------product------------- */
+#product .slick-arrow{
+    position:absolute;
+    top:-20%;
+    z-index:9999;
+    width:100px;
+    height:100px;
+    font-size:0;
+    border:none;
+    
+}
+#product .slick-prev{
+    position:absolute;
+    right:7%;
+    background:url(../img/arrow1.png) no-repeat center;
+}
+#product .slick-next{
+    position:absolute;
+    right:1%;
+    background:url(../img/arrow2.png) no-repeat center;
+}
